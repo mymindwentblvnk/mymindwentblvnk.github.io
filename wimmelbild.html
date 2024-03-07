@@ -34,6 +34,21 @@
       <img class="two" src="wimmelbild_media/two.JPG">
     </div>
   </body>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
+  <script>
+    function PlayMusic() {
+
+    var play=document.getElementById("music");
+    play.play();
+    }
+
+    $(document).ready(function(){
+    setTimeout(PlayMusic,500);
+    })
+
+    </script>
   <script>document.body.style.zoom=0.3</script>
-  <embed src="wimmelbild_media/many-cormorants-gulls-herons-song-bird-2pm-ttp-180618-18013.mp3" width="0" height="0" loop="true" autostart="true" hidden="true" />
+  <audio controls id="music" style="display: none;">
+    <source src="wimmelbild_media/many-cormorants-gulls-herons-song-bird-2pm-ttp-180618-18013.mp3" type="audio/mpeg">
+  </audio>
 </html>
