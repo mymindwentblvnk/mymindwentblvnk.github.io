@@ -4,51 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Wo ist Phoebe? 🐩</title>
-    <style>
-      body {
-        background-color: rgb(255, 255, 255);
-      }
-
-      .main {
-        height: 4709px;
-      }
-
-      .one {
-        position: absolute;
-        top: 0px;
-        left: 0px;
-      }
-
-      .two {
-        position: absolute;
-        top: 0px;
-        left: 3027px;
-      }
-
-    </style>
+    <title>Wo ist Phoebe?</title>
+    <link rel="stylesheet" href="wimmelbild_css/style.css">
   </head>
   <body>
     <div class="main">
       <img class="one" src="wimmelbild_media/one.jpeg">
       <img class="two" src="wimmelbild_media/two.JPG">
     </div>
+    <button id="playButton">
+        Play
+    </button>
+    <!-- see https://pixabay.com/ -->
+    <audio controls id="gulls" style="display: none;" src="wimmelbild_media/many-cormorants-gulls-herons-song-bird-2pm-ttp-180618-18013.mp3"></audio>
+    <script>document.body.style.zoom=0.3</script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
+    <script src="wimmelbild_script/script.js"></script>
   </body>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
-  <script>
-    function PlayMusic() {
-
-    var play=document.getElementById("music");
-    play.play();
-    }
-
-    $(document).ready(function(){
-    setTimeout(PlayMusic,500);
-    })
-
-    </script>
-  <script>document.body.style.zoom=0.3</script>
-  <audio controls id="music" style="display: none;">
-    <source src="wimmelbild_media/many-cormorants-gulls-herons-song-bird-2pm-ttp-180618-18013.mp3" type="audio/mpeg">
-  </audio>
 </html>
