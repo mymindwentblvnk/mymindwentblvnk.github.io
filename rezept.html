@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Pasta Dough Recipe</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .amount {
+            font-weight: bold;
+            min-width: 80px;
+            display: inline-block;
+            color: #2c5282;
+        }
+        .ingredient {
+            color: #333;
+        }
+        ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+        li {
+            padding: 5px 0;
+        }
+    </style>
+</head>
+<body>
+    <div itemscope itemtype="https://schema.org/Recipe">
+        <h1 itemprop="name">Simple Pasta Dough</h1>
+        
+        <p itemprop="description">A basic pasta dough recipe with just three ingredients.</p>
+        
+        <div itemprop="author" itemscope itemtype="https://schema.org/Person">
+            <meta itemprop="name" content="Your Name">
+        </div>
+        
+        <time itemprop="prepTime" datetime="PT15M">Prep time: 15 minutes</time>
+        <br>
+        <time itemprop="cookTime" datetime="PT0M">Cook time: 0 minutes</time>
+        <br>
+        <meta itemprop="recipeYield" content="4 servings">
+        <span>Yield: 4 servings</span>
+        
+        <h2>Ingredients:</h2>
+        <ul>
+            <li itemprop="recipeIngredient">
+                <span class="amount">500g</span> 
+                <span class="ingredient">flour</span>
+            </li>
+            <li itemprop="recipeIngredient">
+                <span class="amount">2</span> 
+                <span class="ingredient">eggs</span>
+            </li>
+            <li itemprop="recipeIngredient">
+                <span class="amount">1 spoon</span> 
+                <span class="ingredient">salt</span>
+            </li>
+        </ul>
+        
+        <h2>Instructions:</h2>
+        <div itemprop="recipeInstructions" itemscope itemtype="https://schema.org/HowToSection">
+            <ol>
+                <li itemprop="itemListElement" itemscope itemtype="https://schema.org/HowToStep">
+                    <span itemprop="text">Mix flour and salt in a large bowl.</span>
+                </li>
+                <li itemprop="itemListElement" itemscope itemtype="https://schema.org/HowToStep">
+                    <span itemprop="text">Create a well in the center and add the eggs.</span>
+                </li>
+                <li itemprop="itemListElement" itemscope itemtype="https://schema.org/HowToStep">
+                    <span itemprop="text">Mix until a dough forms, then knead for 10 minutes.</span>
+                </li>
+                <li itemprop="itemListElement" itemscope itemtype="https://schema.org/HowToStep">
+                    <span itemprop="text">Rest for 30 minutes before rolling out.</span>
+                </li>
+            </ol>
+        </div>
+    </div>
+</body>
+</html>
